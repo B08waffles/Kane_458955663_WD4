@@ -26,12 +26,16 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><button class="tablink"  accesskey="1" onclick="openPage('Home', this, '#2B2E34')"
+                    <li class="active"><button class="tablink" accesskey="1" onclick="openPage('Home', this, '#2B2E34')"
                             id="defaultOpen">Home</button></li>
-                    <li><button class="tablink" accesskey="2" onclick="openPage('Contact', this, '#2B2E34')">Fedora</button></li>
-                    <li><button class="tablink" accesskey="3"onclick="openPage('About', this, '#2B2E34')">Ubuntu</button></li>
-                    <li><button class="tablink" accesskey="4"onclick="openPage('News', this, '#2B2E34')">Debian</button></li>
-                    <li><button class="tablink" accesskey="5"onclick="openPage('contactform', this, '#2B2E34')">Contact</button></li>
+                    <li><button class="tablink" accesskey="2"
+                            onclick="openPage('Contact', this, '#2B2E34')">Fedora</button></li>
+                    <li><button class="tablink" accesskey="3"
+                            onclick="openPage('About', this, '#2B2E34')">Ubuntu</button></li>
+                    <li><button class="tablink" accesskey="4"
+                            onclick="openPage('News', this, '#2B2E34')">Debian</button></li>
+                    <li><button class="tablink" accesskey="5"
+                            onclick="openPage('contactform', this, '#2B2E34')">Contact</button></li>
                 </ul>
             </div>
         </div>
@@ -181,12 +185,11 @@
                                 <input type="email" class="form-control" id="email" placeholder="Enter email">
                             </div>
                             <div class="form-group">
-                                <label for="pwd">Password:</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                                <label for="msg">Message:</label>
+                                <textarea class="form-control" id="msg" placeholder="Enter message"></textarea>
                             </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox"> Remember me</label>
-                            </div>
+
+
                             <button type="submit" class="btn btn-default">Submit</button>
                         </form>
                     </div>
