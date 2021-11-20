@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" defer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="/styles.css" defer>
-    <script src="scripts.js" defer></script>
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" defer>
+    <script src="/js/scripts.js" defer></script>
+    <title>Learn More About Linux</title>
 </head>
 
 <body>
@@ -22,16 +22,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Kane Studios inc.</a>
+                <a class="navbar-brand" href="/index.html">Learning Linux</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><button class="tablink" onclick="openPage('Home', this, '#2B2E34')"
+                    <li class="active"><button class="tablink"  accesskey="1" onclick="openPage('Home', this, '#2B2E34')"
                             id="defaultOpen">Home</button></li>
-                    <li><button class="tablink" onclick="openPage('Contact', this, '#2B2E34')">Fedora</button></li>
-                    <li><button class="tablink" onclick="openPage('About', this, '#2B2E34')">Ubuntu</button></li>
-                    <li><button class="tablink" onclick="openPage('News', this, '#2B2E34')">Debian</button></li>
-                    <li><button class="tablink" onclick="openPage('contactform', this, '#2B2E34')">Contact</button></li>
+                    <li><button class="tablink" accesskey="2" onclick="openPage('Contact', this, '#2B2E34')">Fedora</button></li>
+                    <li><button class="tablink" accesskey="3"onclick="openPage('About', this, '#2B2E34')">Ubuntu</button></li>
+                    <li><button class="tablink" accesskey="4"onclick="openPage('News', this, '#2B2E34')">Debian</button></li>
+                    <li><button class="tablink" accesskey="5"onclick="openPage('contactform', this, '#2B2E34')">Contact</button></li>
                 </ul>
             </div>
         </div>
@@ -47,8 +47,9 @@
             <div class="col-sm-8 text-left">
                 <div id="Home" class="tabcontent">
                     <div class='container-fluid' id='unique-id-1'>
+                        <img src="/img/linux.jpg" alt="Linux logo">
                         <h3>Linux</h3>
-                        <svg height="12" width="500">
+                        <svg height="12" width="250">
                             <line x1="1" y1="0" x2="200" y2="0" style="stroke:rgb(129, 129, 129);stroke-width:2" />
                         </svg>
                         <p>Linux (LEEN-uuks or /ˈlɪnʊks/ LIN-uuks[9]) is a family of open-source Unix-like operating
@@ -79,8 +80,9 @@
 
                 <div id="News" class="tabcontent">
                     <div class='container-fluid' id='unique-id-2'>
+                        <img src="/img/debian.jpg" alt="Debian logo">
                         <h3>Debian</h3>
-                        <svg height="12" width="500">
+                        <svg height="12" width="250">
                             <line x1="1" y1="0" x2="200" y2="0" style="stroke:rgb(129, 129, 129);stroke-width:2" />
                         </svg>
                         <p>Debian (/ˈdɛbiən/),[5][6] also known as Debian GNU/Linux, is a GNU/Linux distribution
@@ -109,8 +111,9 @@
 
                 <div id="Contact" class="tabcontent">
                     <div class='container-fluid' id='unique-id-3'>
+                        <img src="/img/fedora.jpg" alt="Fedora logo">
                         <h3>Fedora</h3>
-                        <svg height="12" width="500">
+                        <svg height="12" width="250">
                             <line x1="1" y1="0" x2="200" y2="0" style="stroke:rgb(129, 129, 129);stroke-width:2" />
                         </svg>
                         <p>Fedora Linux[7] is a Linux distribution developed by the community-supported Fedora Project
@@ -138,8 +141,9 @@
 
                 <div id="About" class="tabcontent">
                     <div class='container-fluid' id='unique-id-4'>
+                        <img src="/img/ubuntu.jpg" alt="Ubuntu logo">
                         <h3>Ubuntu</h3>
-                        <svg height="12" width="500">
+                        <svg height="12" width="250">
                             <line x1="1" y1="0" x2="200" y2="0" style="stroke:rgb(129, 129, 129);stroke-width:2" />
                         </svg>
                         <p>Ubuntu (/ʊˈbʊntuː/ uu-BUUN-too)[6] (Stylized as ubuntu) is a Linux
@@ -168,7 +172,7 @@
                 <div id="contactform" class="tabcontent">
                     <div class="container" id='unique-id-5'>
                         <h2>Contact Form</h2>
-                        <svg height="12" width="500">
+                        <svg height="12" width="250">
                             <line x1="1" y1="0" x2="200" y2="0" style="stroke:rgb(129, 129, 129);stroke-width:2" />
                         </svg>
                         <form>
