@@ -1,36 +1,74 @@
 /* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial;
-  }
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #764826;
+  color: white;
+  float:left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 26px;
+  font-size: 17px;
+  width: 25%;
+}
+
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.tabcontent {
+  color: rgb(0, 0, 0);
+}
+
+ /* Remove the navbar's default margin-bottom and rounded borders */ 
+ .navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
   
-  /* Style tab links */
-  .tablink {
-    background-color: #555;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-  }
-  
-  .tablink:hover {
-    background-color: #777;
-  }
-  
-  /* Style the tab content (and add height:100% for full page content) */
-  .tabcontent {
-    color: white;
+  padding-top: 20px;
+  background-color: #C69A68;
+  height:150% !important;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #764826;
+  color: white;
+  padding: 15px;
+}
+
+/* Override the bootstrap styling*/
+.navbar-inverse {background-color: #764826 !important;}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 768px) {
+  .sidenav {
     display: none;
-    padding: 100px 20px;
-    height: 100%;
+    height: auto;
+    padding: 15px;
   }
-  
-  #Home {background-color: red;}
-  #News {background-color: green;}
-  #Contact {background-color: blue;}
-  #About {background-color: orange;}
+  .row.content {height:auto;} 
+}

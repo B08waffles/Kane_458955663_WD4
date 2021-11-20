@@ -1,62 +1,146 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" type="style/text" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" defer>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" defer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="/styles.css" defer>
     <script src="scripts.js" defer></script>
-
-
-    <title>Title of document</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <nav class="nav nav-pills flex-column flex-sm-row">
-    <div class="container">
-        
-         <div class="row align-items-center">
-           
-            <div class="col"><button class="tablink" onclick="openPage('Home', this, 'red')"
-                    id="defaultOpen">Home</button></div>
-            <div class="col"><button class="tablink" onclick="openPage('News', this, 'green')">News</button></div>
-            <div class="col"><button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button></div>
-            <div class="col"><button class="tablink" onclick="openPage('About', this, 'orange')">About</button></div>
-        </div></nav>
-    </div>
-    <div class="container">
-        <div id="Home" class="tabcontent">
-            <h3>Home</h3>
-            <p>Home is where the heart is..</p>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Kane Studios inc.</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><button class="tablink" onclick="openPage('Home', this, '#2B2E34')"
+                            id="defaultOpen">Home</button></li>
+                    <li><button class="tablink" onclick="openPage('Contact', this, '#2B2E34')">Fedora</button></li>
+                    <li><button class="tablink" onclick="openPage('About', this, '#2B2E34')">Ubuntu</button></li>
+                    <li><button class="tablink" onclick="openPage('News', this, '#2B2E34')">Debian</button></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="container">
-        <div id="News" class="tabcontent">
-            <h3>News</h3>
-            <p>Some news this fine day!</p>
-        </div>
-    </div>
-    <div class="container">
-        <div id="Contact" class="tabcontent">
-            <h3>Contact</h3>
-            <p>Get in touch, or swing by for a cup of coffee.</p>
-        </div>
-    </div>
-    <div class="container">
-        <div id="About" class="tabcontent">
-            <h3>About</h3>
-            <p>Who we are and what we do.</p>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <p><a href="#"></a></p>
+                <p><a href="#"></a></p>
+                <p><a href="#"></a></p>
+            </div>
+            <div class="col-sm-8 text-left">
+                <div id="Home" class="tabcontent">
+                    <h3>Linux</h3>
+                    <p>Linux (LEEN-uuks or /ˈlɪnʊks/ LIN-uuks[9]) is a family of open-source Unix-like operating systems
+                        based on the Linux kernel,[10] an operating system kernel first released on September 17, 1991,
+                        by Linus Torvalds.[11][12][13] Linux is typically packaged in a Linux distribution.
+
+                        Distributions include the Linux kernel and supporting system software and libraries, many of
+                        which are provided by the GNU Project. Many Linux distributions use the word "Linux" in their
+                        name, but the Free Software Foundation uses the name "GNU/Linux" to emphasize the importance of
+                        GNU software, causing some controversy.[14][15]
+
+                        Popular Linux distributions[16][17][18] include Debian, Fedora, and Ubuntu. Commercial
+                        distributions include Red Hat Enterprise Linux and SUSE Linux Enterprise Server. Desktop Linux
+                        distributions include a windowing system such as X11 or Wayland, and a desktop environment such
+                        as GNOME or KDE Plasma. Distributions intended for servers may omit graphics altogether, or
+                        include a solution stack such as LAMP. Because Linux is freely redistributable, anyone may
+                        create a distribution for any purpose.[19]
+
+                        Linux is one of the most prominent examples of free and open-source software collaboration. The
+                        source code may be used, modified and distributed commercially or non-commercially by anyone
+                        under the terms of its respective licenses, such as the GNU General Public License.[19] </p>
+                </div>
+
+                <div id="News" class="tabcontent">
+                    <h3>Debian</h3>
+                    <p>Debian (/ˈdɛbiən/),[5][6] also known as Debian GNU/Linux, is a GNU/Linux distribution composed of
+                        free and open-source software, developed by the community-supported Debian Project, which was
+                        established by Ian Murdock on August 16, 1993. The first version of Debian (0.01) was released
+                        on September 15, 1993,[7] and its first stable version (1.1) was released on June 17, 1996.[8]
+                        The Debian Stable branch is the most popular edition for personal computers and servers. Debian
+                        is also the basis for many other distributions, most notably Ubuntu.
+
+                        Debian is one of the oldest operating systems based on the Linux kernel. The project is
+                        coordinated over the Internet by a team of volunteers guided by the Debian Project Leader and
+                        three foundational documents: the Debian Social Contract, the Debian Constitution, and the
+                        Debian Free Software Guidelines. New distributions are updated continually, and the next
+                        candidate is released after a time-based freeze.
+
+                        Since its founding, Debian has been developed openly and distributed freely according to the
+                        principles of the GNU Project. Because of this, the Free Software Foundation sponsored the
+                        project from November 1994 to November 1995. When the sponsorship ended, the Debian Project
+                        formed the nonprofit organization Software in the Public Interest to continue financially
+                        supporting development.</p>
+                </div>
+
+                <div id="Contact" class="tabcontent">
+                    <h3>Fedora</h3>
+                    <p>Fedora Linux[7] is a Linux distribution developed by the community-supported Fedora Project which
+                        is sponsored primarily by Red Hat, a subsidiary of IBM, with additional support from other
+                        companies.[8] Fedora contains software distributed under various free and open-source licenses
+                        and aims to be on the leading edge of free technologies.[9][10][11] Fedora is the upstream
+                        source of the commercial Red Hat Enterprise Linux distribution and for CentOS.[12] Fedora is a
+                        fork of Red Hat Linux since RHL was discontinued in 2003.
+
+                        Since the release of Fedora 30, five different editions are currently available: Workstation,
+                        focused on the personal computer, Server for servers, CoreOS, focused on cloud computing,
+                        Silverblue, focused on an immutable desktop specialized to container-based workflows and IoT,
+                        focused on IoT devices.[13]
+
+                        As of February 2016, Fedora has an estimated 1.2 million users,[14] including Linus Torvalds (as
+                        of May 2020), creator of the Linux kernel.[15][16][17]</p>
+                </div>
+
+                <div id="About" class="tabcontent">
+                    <h3>Ubuntu</h3>
+                    <p>Ubuntu (/ʊˈbʊntuː/ uu-BUUN-too)[6] (Stylized as ubuntu) is a Linux
+                        distribution based on Debian and composed mostly of free and open-source software.[7][8][9]
+                        Ubuntu is officially released in three editions: Desktop,[10] Server,[11] and Core[12] for
+                        Internet of things devices[13] and robots.[14][15] All the editions can run on the computer
+                        alone, or in a virtual machine.[16] Ubuntu is a popular operating system for cloud computing,
+                        with support for OpenStack.[17] Ubuntu's default desktop has been GNOME, since version
+                        17.10.[18]
+
+                        Ubuntu is released every six months, with long-term support (LTS) releases every two
+                        years.[6][19][20] As of 22 April 2021, the most recent long-term support release is 20.04
+                        ("Focal Fossa"), which is supported until 2025 under public support and until 2030 as a paid
+                        option for companies and free for individuals who register.[21] The latest standard release is
+                        21.10 ("Impish Indri"), which is supported for nine months.
+
+                        Ubuntu is developed by Canonical,[22] and a community of other developers, under a meritocratic
+                        governance model.[6][23] Canonical provides security updates and support for each Ubuntu
+                        release, starting from the release date and until the release reaches its designated end-of-life
+                        (EOL) date.[6][24][25] Canonical generates revenue through the sale of premium services related
+                        to Ubuntu and donations from those who download the Ubuntu software.[26][27][28]
+
+                        Ubuntu is named after the Nguni philosophy of ubuntu, which Canonical indicates means "humanity
+                        to others" with a connotation of "I am what I am because of who we all are".[6]</p>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
+    <footer class="container-fluid text-center">
+        <p>© 2021, Kane Studios inc.</p>
+    </footer>
+
 </body>
 
 </html>
