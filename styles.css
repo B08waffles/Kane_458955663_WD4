@@ -1,34 +1,27 @@
-/* Set height of body and the document to 100% to enable "full page tabs" */
-body,
-html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
-}
-
 /* Style tab links */
 .tablink {
   background-color: #764826;
   color: white;
-  float:left;
+  float: left;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 26px;
   font-size: 17px;
   width: 25%;
+
 }
 
-
 .tablink:hover {
-  background-color: #777;
+  background-color: rgb(124, 94, 94);
+
 }
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: white;
   display: none;
-  padding: 100px 20px;
+  padding: 50px 20px;
   height: 100%;
 }
 
@@ -36,32 +29,59 @@ html {
   color: rgb(0, 0, 0);
 }
 
- /* Remove the navbar's default margin-bottom and rounded borders */ 
- .navbar {
+/* Override the bootstrap styling on components*/
+/* Set black background color, white text and some padding */
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #764826;
+  color: white;
+  padding: 15px;
+  width: 100%;
+}
+
+.navbar {
   margin-bottom: 0;
   border-radius: 0;
 }
 
-/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 450px}
+.row.content {
+  height: 450px
+}
 
-/* Set gray background color and 100% height */
 .sidenav {
-  
-  padding-top: 20px;
+  height: 200%;
   background-color: #C69A68;
-  height:150% !important;
+
 }
 
-/* Set black background color, white text and some padding */
-footer {
-  background-color: #764826;
-  color: white;
-  padding: 15px;
+.navbar-inverse {
+  background-color: #764826 !important;
+  transition: 500ms ease;
 }
 
-/* Override the bootstrap styling*/
-.navbar-inverse {background-color: #764826 !important;}
+.form-control {
+  width: 75% !important;
+}
+
+#unique-id-5 {
+  width: 75% !important;
+}
+
+/* Override framework defaults for overall layout at least once */
+.container-fluid {
+  filter: grayscale(15%) !important;
+
+}
+
+/* Override framework animation class in one (1) significant way */
+
+button:hover {
+  color: #00ff4c !important;
+  text-decoration: underline !important;
+  transition: 1500ms ease !important;
+
+}
 
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 768px) {
@@ -70,5 +90,13 @@ footer {
     height: auto;
     padding: 15px;
   }
-  .row.content {height:auto;} 
+
+  .row.content {
+    height: auto;
+  }
+
+  .tablink {
+    width: 20%;
+    font-size: 80%;
+  }
 }
